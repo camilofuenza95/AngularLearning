@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="imgContainer">
+    <img src="https://1000marcas.net/wp-content/uploads/2020/03/Johnnie-Walker-logo.png" class="img-responsive" style="max-height: 90px;">
+  </div>
+<br>
+
+
+  <div class="form-container">
+
+
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input type="text" matInput
+         ngModel #usr="ngModel" >
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput
+        ngModel #pass="ngModel">
+
+      </mat-form-field>
+      <div class="buttonContainer">
+        <button mat-raised-button color="primary" (click)="submit(usr,pass)">Log In</button>
+      </div>
+
+  </div>
+</div>
